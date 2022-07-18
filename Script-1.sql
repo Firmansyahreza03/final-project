@@ -359,7 +359,7 @@ ALTER table comm_bookmark add constraint comm_bookmark_fk foreign key(thread_hdr
 ALTER table comm_bookmark add constraint comm_bookmark_user_fk foreign key(user_id) references comm_user(id);
 
 create table comm_article(
-	id varchar(36),
+	id varchar(40),
 	article_title text,
 	article_content text,
 	user_id varchar(36),
